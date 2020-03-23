@@ -21,7 +21,7 @@ function Detail({
     fetchData()
   }, [id])
   if (isLoading || !data.sprites) {
-    return <div>Loading...</div>
+    return <div>Carregando...</div>
   }
   return (
     <div className="container">
@@ -30,7 +30,7 @@ function Detail({
         <div className="img-container">
           <img src={data.sprites.front_default} alt={data.name} />
         </div>
-        <Link to="/">Return to List View</Link>
+        <Link to="/">Retornar para lista</Link>
       </div>
     </div>
   )

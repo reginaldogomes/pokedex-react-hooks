@@ -6,9 +6,9 @@ function List() {
   const [data, setData] = useState([])
   useEffect(() => {
     async function fetchData() {
-      const result = await axios("https://pokeapi.co/api/v2/pokemon")
-      console.log(result);
-      setData(result.data.results)
+    const result = await axios("https://pokeapi.co/api/v2/pokemon")
+    console.log(result);
+    setData(result.data.results)
     }
     fetchData()
   }, [])
